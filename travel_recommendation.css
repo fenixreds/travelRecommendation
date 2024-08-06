@@ -1,0 +1,270 @@
+html {
+  font-family: "Poppins", sans-serif;;
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*-----------------------------------*\
+   * #REUSED STYLE
+  \*-----------------------------------*/
+  
+   
+  
+  nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+
+/* Basic CSS for the navigation bar */
+
+.navbar{
+  background-color: sandybrown;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  align-items: center;
+  
+}
+
+.navbar-title{
+  padding-left: 30px;
+}
+
+.navbar-link{
+  padding: 10px; 
+}
+
+
+
+.navbar-destination{
+  padding: 10px;
+  width: 50%;
+}
+
+.navbar-button{
+  padding: 10px;
+}
+  
+/* Basic CSS for the home */
+
+.presentation{
+    background-image:url("https://wallpapers.com/images/featured/new-york-city-5oaa14h4mw6w3o71.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    background-blend-mode: overlay;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 640px;
+    padding: 25px;
+    color: white;
+}
+
+
+.title-maintext{
+    
+    grid-column: 1/2;
+    grid-row: 1;
+    font-size:100px;
+    margin-bottom: 40px;
+
+}
+
+.text-maintext{
+    
+    grid-column: 1/2;
+    grid-row: 2;
+    font-size:medium;
+    margin-bottom: 40px;
+}
+
+.button-maintext{
+  grid-column: 1/2;
+  grid-row: 3;
+  padding: 5px;
+  background-color: chocolate;
+  color: white;
+  width: 130px;
+  height: 40px;
+}
+
+.result-search{
+  
+  grid-column: 2/3;
+  grid-row: 1/4;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Basic CSS for the about */
+
+.about{
+  background-image:url("https://wallpapers.com/images/featured/new-york-city-5oaa14h4mw6w3o71.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  background-blend-mode: overlay;
+  display: grid;
+  min-height: 640px;
+  padding: 25px;
+  color: white;
+}
+
+.about-title{
+  grid-column: 1/5;
+  font-size:80px;
+  padding: 10px;
+  
+}
+
+.about-text{
+  background-color: hsla(0, 0%, 0%, 0.7);
+  grid-column: 1/5;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.about-ourteam{
+  grid-column: 1/5;
+  display: grid;
+  padding: 10px;
+  align-items: center;
+}
+.about-ourteam-title{
+  grid-column: 1;
+  text-align: center;
+  font-size: 50px;
+}
+.about-ourteam-members{
+  grid-column: 2/5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  align-items: center;
+}
+
+.about-ourteam-member{
+  display: grid;
+  text-align: left;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  padding: 10px;
+  margin: 10px;
+  width: 70%;
+}
+
+.about-ourteam-button{
+  padding: 6px;
+  background-color: chocolate;
+  text-align: center;
+  color: white;
+  
+}
+
+
+/* Basic CSS for the contact */
+
+.contact{
+  background-image:url("https://wallpapers.com/images/featured/new-york-city-5oaa14h4mw6w3o71.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  background-blend-mode: overlay;
+  display: grid;
+  min-height: 640px;
+  padding: 25px;
+  color: white;
+  
+}
+
+.contact-title{
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items:end;
+  font-size:60px;
+
+}
+
+.contact-text{
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  margin: 20px;
+  font-size:20px;
+}
+
+.contact-form{
+  grid-column: 2/3;
+  grid-row: 1/3;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 8px;
+}
+#contactForm button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: chocolate;
+  text-align: center;
+  width: 100%;
+  
+}
+#contactForm button:hover {
+  background-color: #582a03;
+}
+ 
+
+/* Basic CSS for the search result */
+
+.img-search{
+  width: 500px;
+}
+
+.title-search{
+  background-color:white;
+  width: 500px;
+  font-size: large;
+  color: black;
+}
+
+.text-search{
+  background-color: white;
+  width: 500px;
+  font-size:small;
+  color: black;
+  margin-bottom: 10px;
+}
